@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gelişmiş Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>📝 Görev Takip</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Yeni görev gir..." required />
+      <button type="submit">Ekle</button>
+    </form>
+
+    <section id="filters">
+      <button data-filter="all" class="active">Hepsi</button>
+      <button data-filter="completed">Tamamlanan</button>
+      <button data-filter="pending">Tamamlanmamış</button>
+    </section>
+
+    <ul id="todo-list"></ul>
+  </main>
+
+  <script src="./dist/testt.js"></script>
+</body>
+</html>
